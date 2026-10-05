@@ -3,6 +3,7 @@
 
 int main() {
 	int A, B, C;
+	int condition;
 
 	setlocale(LC_CTYPE, ".UTF-8");
 
@@ -13,13 +14,8 @@ int main() {
 	printf("Введи энергию в формате: A, B, C: ");
 	scanf_s("%d, %d, %d", &A, &B, &C);
 
-	if ((A % 3 == 0) && (B % 3 == 0) && (C % 3 == 0)) {
-		puts("\n--- Портал активирован ---");
-	}
-
-	else {
-		puts("Введён неверный пароль: портал закрыт");
-	}
+	condition = ((A % 3 == 0) && (B % 3 == 0) && (C % 3 == 0));
+	printf("Доступ открыт (1 - да, 0 - нет): %d\n", condition);
 
 	return 0;
 }
