@@ -21,7 +21,7 @@
 
 ### Блок-схема
 
-![Блок-схема](homework_practice_4/homework_4_schema.png)
+![Блок-схема](./homework_4_schema.png)
 
 
 ---
